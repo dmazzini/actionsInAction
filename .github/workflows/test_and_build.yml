@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: read
+  packages: write
 
 jobs:
   test_and_build:
@@ -41,4 +42,4 @@ jobs:
       uses: docker/build-push-action@v7
       with:
         push: true
-        tags: ghcr.io/dmazzini/actionsInAction:latest
+        tags: ghcr.io/dmazzini/actionsinaction:latest
